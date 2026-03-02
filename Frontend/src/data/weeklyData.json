@@ -1,0 +1,418 @@
+[
+  {
+    "week": 1,
+    "friday": {
+      "topic": "The AI/ML Ecosystem",
+      "subtopic": "Narrow vs. GenAI, The ML Lifecycle, Data Types.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Probability & Stats for AI",
+      "subtopic": "Distributions, Bayes Theorem, Hypothesis Testing.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 2,
+    "friday": {
+      "topic": "Linear Algebra for ML",
+      "subtopic": "Tensors, Dot Products, Dimensionality.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Calculus & Optimizers",
+      "subtopic": "Gradient Descent, Learning Rates, Convexity.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 3,
+    "friday": {
+      "topic": "Data Wrangling for ML",
+      "subtopic": "Handling Messy Data, Outliers, Skewness.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Feature Engineering",
+      "subtopic": "Scaling, Encoding, Polynomial Features.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 4,
+    "friday": {
+      "topic": "Exploratory AI (EDA)",
+      "subtopic": "Visualizing Signal vs. Noise in Datasets.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Mini-Project",
+      "subtopic": "Building a Data Analysis Pipeline.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 5,
+    "friday": {
+      "topic": "Linear Regression",
+      "subtopic": "The Math of Prediction, Cost Functions.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Polynomial & Ridge/Lasso",
+      "subtopic": "Regularization: Avoiding \"Overfitting.\"",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 6,
+    "friday": {
+      "topic": "Logistic Regression",
+      "subtopic": "Classification logic, Sigmoid & Softmax.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Evaluation Metrics",
+      "subtopic": "Accuracy, F1, ROC-AUC, Confusion Matrix.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 7,
+    "friday": {
+      "topic": "Decision Trees",
+      "subtopic": "Entropy, Gini Impurity, Pruning.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "K-Nearest Neighbors",
+      "subtopic": "Distance Metrics & Classification logic.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 8,
+    "friday": {
+      "topic": "Support Vector Machines",
+      "subtopic": "Hyperplanes, Margins, and Kernels.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Case Study",
+      "subtopic": "Predicting Customer Churn.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 9,
+    "friday": {
+      "topic": "Bagging (Random Forest)",
+      "subtopic": "Bootstrapping, Aggregation, Wisdom of Crowds.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Boosting (XGBoost/LGBM)",
+      "subtopic": "Sequential Learning, Residual Correction.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 10,
+    "friday": {
+      "topic": "Dimensionality Reduction",
+      "subtopic": "PCA, t-SNE (Visualizing High-Dim Data).",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Clustering (K-Means)",
+      "subtopic": "Unsupervised Discovery, Centroid logic.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 11,
+    "friday": {
+      "topic": "Anomaly Detection",
+      "subtopic": "Isolation Forests, Statistical Outlier Detection.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Recommendation Systems",
+      "subtopic": "Collaborative vs. Content Filtering.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 12,
+    "friday": {
+      "topic": "Explainable AI (XAI)",
+      "subtopic": "SHAP & LIME: Opening the \"Black Box.\"",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Assessment",
+      "subtopic": "The Classical ML Interview Prep.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 13,
+    "friday": {
+      "topic": "The Neural Network",
+      "subtopic": "Perceptrons, Multi-Layer Perceptrons (MLP).",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Activation Functions",
+      "subtopic": "ReLU, Tanh, Sigmoid: The logic of \"Firing.\"",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 14,
+    "friday": {
+      "topic": "Backpropagation",
+      "subtopic": "The Chain Rule & Weight Updating.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Neural Network Tuning",
+      "subtopic": "Dropout, Batch Norm, Weight Init.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 15,
+    "friday": {
+      "topic": "Computer Vision (CNNs)",
+      "subtopic": "Convolution, Pooling, Feature Maps.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Image Classification",
+      "subtopic": "Training a CNN from scratch on CIFAR-10.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 16,
+    "friday": {
+      "topic": "Advanced Vision",
+      "subtopic": "Transfer Learning, ResNet, VGG.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Object Detection",
+      "subtopic": "YOLO vs. SSD (Real-time Detection logic).",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 17,
+    "friday": {
+      "topic": "NLP Basics",
+      "subtopic": "Tokenization, Stemming, Lemmatization.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Text Representation",
+      "subtopic": "Bag of Words, TF-IDF, N-grams.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 18,
+    "friday": {
+      "topic": "Word Embeddings",
+      "subtopic": "Word2Vec, GloVe, FastText logic.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Sequential Data (RNNs)",
+      "subtopic": "Memory in AI, LSTMs, and GRUs.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 19,
+    "friday": {
+      "topic": "The Attention Mechanism",
+      "subtopic": "Self-Attention, Query/Key/Value logic.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Transformer Architecture",
+      "subtopic": "The Encoder-Decoder Model (BERT vs. GPT).",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 20,
+    "friday": {
+      "topic": "Sentiment Analysis",
+      "subtopic": "Building a Review-Rating AI.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Project",
+      "subtopic": "Real-world Sentiment Classifier.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 21,
+    "friday": {
+      "topic": "Intro to GenAI & LLMs",
+      "subtopic": "Hallucinations, Context Windows, Temperature.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Prompt Engineering",
+      "subtopic": "Zero-shot, Few-shot, CoT (Chain of Thought).",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 22,
+    "friday": {
+      "topic": "LLM APIs (OpenAI/Gemini)",
+      "subtopic": "Handling Requests, Tokens, and Costs.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "RAG Foundations",
+      "subtopic": "Vector Databases, Semantic Search, Chunking.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 23,
+    "friday": {
+      "topic": "Advanced RAG",
+      "subtopic": "Reranking, Hybrid Search, Query Expansion.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "LangChain / LlamaIndex",
+      "subtopic": "Orchestrating AI Pipelines.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 24,
+    "friday": {
+      "topic": "Context Engineering",
+      "subtopic": "Strategic prompt structure for long-form data.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Agentic AI (AI Agents)",
+      "subtopic": "Tools, Reasoning, and ReAct framework.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 25,
+    "friday": {
+      "topic": "Model Serving",
+      "subtopic": "FastAPI, Flask: Turning AI into a Service.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Deployment (Docker)",
+      "subtopic": "Containerization for AI Portability.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 26,
+    "friday": {
+      "topic": "Cloud for AI (AWS/GCP)",
+      "subtopic": "Hosting models on SageMaker or Vertex AI.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Model Quantization",
+      "subtopic": "Making LLMs run on CPUs/Edge devices.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 27,
+    "friday": {
+      "topic": "AI Testing & Quality",
+      "subtopic": "Evaluating RAG (RAGAS framework).",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "AI Security & Ethics",
+      "subtopic": "Prompt Injection, Bias, Data Privacy.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 28,
+    "friday": {
+      "topic": "CI/CD for AI",
+      "subtopic": "Automated Retraining and Deployment.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Capstone Setup",
+      "subtopic": "Project Selection (RAG or Vision).",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 29,
+    "friday": {
+      "topic": "Portfolio Development",
+      "subtopic": "Showcasing Projects on GitHub/HuggingFace.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Resume Optimization",
+      "subtopic": "AI-Specific Keywords and ATS hacks.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 30,
+    "friday": {
+      "topic": "Mock Interview 1",
+      "subtopic": "Math, Logic, and Classical ML rounds.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Mock Interview 2",
+      "subtopic": "DL, NLP, and GenAI technical rounds.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 31,
+    "friday": {
+      "topic": "ML System Design",
+      "subtopic": "\"How would you build Netflix/ChatGPT?\"",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Soft Skills for AI",
+      "subtopic": "Communicating Data to Stakeholders.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  },
+  {
+    "week": 32,
+    "friday": {
+      "topic": "Career Strategy",
+      "subtopic": "Where to apply: Startups vs. MNCs.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    },
+    "saturday": {
+      "topic": "Graduation Day",
+      "subtopic": "Final Demo & Referral Connect.",
+      "zoomLink": "https://zoom.us/j/1234567890"
+    }
+  }
+]

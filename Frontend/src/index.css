@@ -1,0 +1,494 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body,
+  #root {
+    background-color: #ffffff;
+    color: #1e293b; /* slate-800 */
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+  }
+
+  /* Remove dark styles globally */
+  [class*="dark:"] {
+    all: unset;
+  }
+}
+
+@layer utilities {
+  .card-gradient {
+    background: linear-gradient(to bottom right, #ffffff, #f9fafb);
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, #4f46e5, #7e22ce, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, rgb(75, 75, 208), #5a1ce9);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-track {
+  /* background: #f3f4f6; */
+}
+
+.no-scrollbar {
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* Internet Explorer / Edge */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important; /* Chrome/Safari */
+}
+
+html,
+body,
+#root {
+  background-color: #f9fafb;
+  color: #1e293b;
+}
+
+.page-gradient {
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9ff 50%, #f1f4ff 100%);
+}
+
+.react-calendar {
+  border: none !important;
+  font-family: inherit;
+  background: white !important;
+}
+.react-calendar__tile--active {
+  background: linear-gradient(to right, #4f46e5, #8b5cf6) !important;
+  color: white !important;
+  border-radius: 6px !important;
+}
+
+body {
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9ff 50%, #eef2ff 100%);
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* =============================== */
+/* CALENDAR CONTAINER (WHITE CARD) */
+/* =============================== */
+.custom-calendar {
+  background: #ffffff !important; /* White Background */
+  border-radius: 20px;
+  padding: 20px;
+  color: #0d0f19 !important; /* Dark Text */
+  border: 2px solid #0b2b6a !important; /* Light Border */
+  width: 100%;
+}
+
+/* ========================== */
+/* MONTH HEADER (TOP SECTION) */
+/* ========================== */
+.react-calendar__navigation button {
+  background: none !important;
+  color: #0d0f19 !important;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+.react-calendar__navigation button:hover {
+  background: rgba(102, 104, 206, 0.415) !important; /* Light Gray Hover */
+}
+
+/* ================== */
+/* WEEKDAY NAME ROW   */
+/* ================== */
+.react-calendar__month-view__weekdays {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #6b7280; /* Gray 500 */
+  margin-bottom: 6px;
+}
+
+/* =============================== */
+/* GRID SPACING BETWEEN DAY TILES */
+/* =============================== */
+.react-calendar__month-view__days {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr) !important;
+  gap: 4px !important; /* GAP BETWEEN CARDS */
+  padding: 1px !important;
+}
+
+/* ============================= */
+/* DAY TILE (PURPLE CARD STYLE) */
+/* ============================= */
+.day-tile {
+  background: rgba(87, 119, 203, 0.433) !important; /* Purple BG */
+  color: rgb(2, 25, 106) !important; /* White Text */
+  padding: 14px 0;
+  border-radius: 10px;
+  position: relative;
+
+  font-weight: 600;
+  transition: background 0.2s ease;
+  width: 40px;
+
+  display: flex !important;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+
+  box-sizing: border-box !important;
+}
+
+/* Hover effect */
+.day-tile:hover {
+  background: #6974c8 !important; /* Darker Purple */
+}
+
+/* ======================= */
+/* OTHER MONTH DIMMED DAYS */
+/* ======================= */
+.dim-tile {
+  opacity: 0.35 !important;
+}
+
+/* ====================== */
+/* SELECTED DAY (ACTIVE) */
+/* ====================== */
+.selected-tile {
+  border: 2px solid #107bb9 !important; /* Black border */
+  background: #6974c8 !important; /* Dark Purple */
+}
+
+.holiday-tile {
+  background: #d1d5db !important; /* Gray-300 */
+  color: #6b7280 !important; /* Gray-500 */
+  cursor: not-allowed;
+  opacity: 0.6 !important;
+}
+
+/* ====================== */
+/* TILE CONTENT WRAPPER  */
+/* ====================== */
+.tile-content-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* =================== */
+/* GREEN CHECKMARK     */
+/* =================== */
+.checkmark {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+
+/* =================== */
+/* PROGRESS RING ICON  */
+/* =================== */
+
+.tile-content-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.tile-content-wrapper {
+  position: absolute !important;
+  inset: 0 !important; /* top:0 right:0 bottom:0 left:0 */
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none; /* avoid blocking click */
+}
+.progress-ring {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+}
+
+/* Pulsing LIVE icon */
+.live-pulse {
+  animation: livePulse 1.2s infinite ease-in-out;
+}
+
+@keyframes livePulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+/* Bouncing video icon */
+.recorded-bounce {
+  animation: recordedBounce 1s infinite;
+}
+
+@keyframes recordedBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.live-glow {
+  animation: livePulse 1s infinite alternate;
+}
+
+@keyframes livePulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 4px rgba(255, 0, 0, 0.6);
+    background-color: #ff4d4d;
+  }
+  100% {
+    transform: scale(1.3);
+    box-shadow: 0 0 12px rgba(255, 0, 0, 1);
+    background-color: #ff1a1a;
+  }
+}
+
+.h2-belive {
+  margin: 0;
+  padding: 0;
+  /* position: absolute;
+  transform: translate(-50%, -50%); */
+  font-size: 6em;
+  color: transparent;
+  text-transform: uppercase;
+}
+.h2-belive span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: blue;
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  overflow: hidden;
+}
+.h2-belive:hover span:nth-child(1) {
+  transform: translateY(-18px);
+}
+.h2-belive span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: blue;
+  transition: 0.5s;
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+  overflow: hidden;
+}
+.h2-belive:hover span:nth-child(2) {
+  transform: translateY(18px);
+}
+.h2-belive span:nth-child(3) {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) scaleY(0);
+  width: 100%;
+  color: #fff;
+  background: rgb(139, 92, 173);
+  font-size: 0.25em;
+  font-weight: 500;
+  letter-spacing: 0.7em;
+  text-align: center;
+  padding-left: 20px;
+  margin-left: 5px;
+  transition: 0.5s;
+}
+.h2-belive:hover span:nth-child(3) {
+  transform: translateY(-50%) scaleY(1);
+}
+
+.h2-belive {
+  /* margin-top: 20px; */
+  text-align: center;
+  font-size: 4rem;
+  position: relative;
+}
+
+/*Claymorphisim*/
+/* Custom Claymorphism Shadows */
+.clay-active {
+  box-shadow:
+    inset -4px -4px 12px rgba(0, 0, 0, 0.3),
+    inset 4px 4px 12px rgba(255, 255, 255, 0.2),
+    0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.clay-inactive {
+  box-shadow:
+    inset -3px -3px 8px rgba(0, 0, 0, 0.2),
+    inset 3px 3px 8px rgba(255, 255, 255, 0.05);
+}
+
+.clay-profile {
+  box-shadow:
+    inset -2px -2px 6px rgba(0, 0, 0, 0.4),
+    inset 2px 2px 6px rgba(255, 255, 255, 0.3);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/*Home*/
+@layer utilities {
+  /* Soft 3D Floating Effect */
+  .clay-card {
+    box-shadow:
+      inset -4px -4px 12px rgba(0, 0, 0, 0.05),
+      inset 4px 4px 12px rgba(255, 255, 255, 0.8),
+      0 15px 35px rgba(26, 28, 75, 0.08);
+  }
+
+  /* Deep Main Container Effect */
+  .clay-main {
+    box-shadow:
+      inset -10px -10px 30px rgba(232, 235, 249, 0.5),
+      inset 10px 10px 30px rgba(255, 255, 255, 0.9),
+      0 30px 60px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Inset "Pressed" Effect for images or smaller elements */
+  .clay-inset {
+    box-shadow:
+      inset 4px 4px 8px rgba(0, 0, 0, 0.1),
+      inset -4px -4px 8px rgba(255, 255, 255, 1);
+  }
+
+  .clay-interactive-bubble {
+    border-radius: 1rem; /* Adjust as needed for bubble effect */
+    box-shadow:
+      inset 5px 5px 10px rgba(200, 200, 200, 0.5),
+      /* Darker inset */ inset -5px -5px 10px rgba(255, 255, 255, 0.8),
+      /* Lighter inset */ 0px 5px 15px rgba(0, 0, 0, 0.1); /* Outer shadow for lift */
+  }
+}
+
+/* Small & Attractive Mini Calendar Model */
+.clay-calendar-mini {
+  border: none !important;
+  width: 250px !important;
+  background: transparent !important;
+  font-family: inherit;
+}
+
+/* Navigation Header */
+.clay-calendar-mini .react-calendar__navigation {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.clay-calendar-mini .react-calendar__navigation button {
+  min-width: 32px !important;
+  background: #ffffff !important;
+  border-radius: 12px;
+  margin: 0 2px;
+  color: #1a1c4b !important;
+  box-shadow:
+    4px 4px 8px rgba(0, 0, 0, 0.05),
+    inset 2px 2px 4px white;
+}
+
+/* Circular Date Tiles - Fixed Visibility */
+.clay-calendar-mini .react-calendar__tile {
+  width: 30px !important;
+  height: 30px !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  border-radius: 25% !important;
+  margin: 3px auto !important;
+  transition: all 0.5s ease-in-out;
+  /* Tinted background so it doesn't mix with white */
+  background: #e8edff !important;
+  color: #1a1c4b !important;
+  box-shadow:
+    inset -2px -2px 4px rgba(0, 0, 0, 0.05),
+    inset 2px 2px 4px white;
+}
+
+/* Hover State - Turns white to pop */
+.clay-calendar-mini .react-calendar__tile:enabled:hover {
+  background: #ffffff !important;
+  box-shadow:
+    4px 4px 8px rgba(0, 0, 0, 0.1),
+    -2px -2px 5px white;
+  transform: scale(1.1);
+  z-index: 100;
+}
+
+/* Active Selected Date (The Deep Bubble) */
+.clay-calendar-mini .react-calendar__tile--active {
+  background: #1a1c4b !important;
+  color: white !important;
+  box-shadow:
+    inset -3px -3px 6px rgba(0, 0, 0, 0.4),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.2);
+}
+
+.clay-calendar-mini .react-calendar__tile--active:hover {
+  background: white !important;
+  color: #1a1c4b !important;
+  box-shadow:
+    inset -3px -3px 6px rgba(0, 0, 0, 0.4),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.2);
+}
+
+/* Neighboring month dates - Muted but visible */
+.clay-calendar-mini .react-calendar__month-view__days__day--neighboringMonth {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #cbd5e1 !important;
+  opacity: 0.5;
+}
+
+/* Side-Bar*/
+.clay-active {
+  box-shadow:
+    inset -4px -4px 8px rgba(0, 0, 0, 0.3),
+    inset 4px 4px 8px rgba(255, 255, 255, 0.2),
+    0 8px 15px rgba(79, 70, 229, 0.4);
+}
+
+.clay-inactive {
+  box-shadow:
+    inset -3px -3px 6px rgba(0, 0, 0, 0.1),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.05);
+}
+
+/* ================== */
+/* END OF CSS FILE  */
