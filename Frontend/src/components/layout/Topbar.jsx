@@ -49,13 +49,13 @@ export default function Topbar() {
           {/* LOGO WITH INCREASED INNER GLOW */}
           <div className="p-2 rounded-2xl bg-white shadow-[inset_-4px_-4px_10px_rgba(0,0,0,0.15),inset_4px_4px_10px_rgba(255,255,255,1),0_12px_20px_rgba(0,0,0,0.05)]">
             <img
-              src="https://res.cloudinary.com/dpvrtbqxt/image/upload/v1764072403/samples/Aspire/Logo_f8hqc0.jpg"
+              src="/gpt-image-2_A_minimalist_flat_vector_logo_for_Rune_Learning_showing_a_stylized_R_letter_desi-0.jpg"
               alt="LOGO"
               className="w-10 h-10 rounded-full object-contain"
             />
           </div>
           <h1 className="text-lg md:text-2xl font-black tracking-tighter text-[#1A1C4B]">
-            Aspire Next <span className="text-indigo-600">LMS</span>
+            RUNE Learning <span className="text-indigo-600">LMS</span>
           </h1>
         </a>
       </div>

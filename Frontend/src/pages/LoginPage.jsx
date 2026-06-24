@@ -5,7 +5,6 @@ import { auth, googleProvider } from "../firebase";
 import { useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { FaSpinner } from "react-icons/fa";
-import AspireLogo from "../assets/Aspire.jpg";
 import loginImage from "../assets/Login/loginImage.png";
 import { useAuth } from "../context/AuthContext";
 import api from "../utils/api";
@@ -83,7 +82,7 @@ export default function LoginPage() {
         >
           <div className="text-center mb-10">
             <img
-              src={AspireLogo}
+              src="/gpt-image-2_A_minimalist_flat_vector_logo_for_Rune_Learning_showing_a_stylized_R_letter_desi-0.jpg"
               className="h-20 mx-auto mb-5 rounded-3xl"
               alt="Logo"
             />

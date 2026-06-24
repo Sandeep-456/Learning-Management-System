@@ -181,7 +181,7 @@ const CodingAssignments = ({ session }) => {
         <div className="mt-12 flex items-center justify-center gap-2 opacity-30">
           <FaLayerGroup className="text-slate-400" />
           <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">
-            Aspire Coding Environment
+            RUNE Coding Environment
           </span>
         </div>
       </div>

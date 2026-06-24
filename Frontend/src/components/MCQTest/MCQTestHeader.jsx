@@ -1,5 +1,5 @@
 import React from "react";
-import AspireLogo from "../../assets/AspireLogo.png";
+// RUNE Learning MCQ Header
 
 const MCQTestHeader = ({
   topicName,
@@ -12,7 +12,7 @@ const MCQTestHeader = ({
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
         <div className="flex items-center gap-4">
-          <img src={AspireLogo} alt="AspireNext" className="h-10" />
+          <img src="/gpt-image-2_A_minimalist_flat_vector_logo_for_Rune_Learning_showing_a_stylized_R_letter_desi-0.jpg" alt="RUNE Learning" className="h-10" />
           <div>
             <div className="text-base font-semibold text-indigo-700">
               Practice Test — {topicName}

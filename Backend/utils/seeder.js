@@ -129,7 +129,7 @@ const seedData = async () => {
     // A Student User
     const studentUser = await User.create({
       mobile: "9876543210",
-      email: "student@aspirelms.com",
+      email: "student@runelearning.com",
       name: "Sandeep Kumar",
       username: "sandeep_student",
       provider: "phone",
@@ -143,7 +143,7 @@ const seedData = async () => {
       lastName: "Kumar",
       gender: "Male",
       dob: "2000-01-01",
-      email: "student@aspirelms.com",
+      email: "student@runelearning.com",
       country: "India",
       state: "Telangana",
       city: "Hyderabad",
@@ -154,7 +154,7 @@ const seedData = async () => {
     // An Admin User
     const adminUser = await User.create({
       mobile: "9999999999",
-      email: "admin@aspirelms.com",
+      email: "admin@runelearning.com",
       name: "LMS Admin",
       username: "lms_admin",
       provider: "google",
@@ -165,7 +165,7 @@ const seedData = async () => {
       user: adminUser._id,
       firstName: "LMS",
       lastName: "Admin",
-      email: "admin@aspirelms.com",
+      email: "admin@runelearning.com",
       course: "AI/ML",
       courseType: "8 Months",
     });

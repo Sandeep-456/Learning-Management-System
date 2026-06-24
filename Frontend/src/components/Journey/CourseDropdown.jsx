@@ -31,7 +31,7 @@ export default function CourseDropdown({ subtopic }) {
 
   return (
     <div className="">
-      {/* --- ASPIRE STRONG CLAY CARD --- */}
+      {/* --- RUNE STRONG CLAY CARD --- */}
       <motion.button
         onClick={() => setOpen(!open)}
         whileHover={{ scale: 1.01, y: -2 }}

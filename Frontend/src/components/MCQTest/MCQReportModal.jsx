@@ -1,5 +1,5 @@
 import React from "react";
-import AspireLogo from "../../assets/AspireLogo.png";
+// RUNE Learning MCQ Report Modal
 
 const MCQReportModal = ({
   showReportModal,
@@ -16,12 +16,12 @@ const MCQReportModal = ({
       <div className="bg-white rounded-2xl shadow-2xl max-w-3xl w-full p-6">
         <div className="flex items-start justify-between gap-4">
           <div className="flex items-center gap-3">
-            <img src={AspireLogo} alt="AspireNext" className="h-10" />
+            <img src="/gpt-image-2_A_minimalist_flat_vector_logo_for_Rune_Learning_showing_a_stylized_R_letter_desi-0.jpg" alt="RUNE Learning" className="h-10" />
             <div>
               <h2 className="text-2xl font-bold text-indigo-700">
                 Practice Test Report
               </h2>
-              <p className="text-sm text-gray-500">AspireNext — {topicName}</p>
+              <p className="text-sm text-gray-500">RUNE Learning — {topicName}</p>
             </div>
           </div>
 
