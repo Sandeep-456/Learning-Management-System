@@ -226,7 +226,7 @@ export default function Sidebar() {
               }}
               className="w-12 h-12 rounded-full bg-[#3B82F6] text-white font-black flex items-center justify-center shadow-lg border-2 border-white/10 hover:scale-110 transition-transform clay-profile"
             >
-              {userProfile.user.username.charAt(0).toUpperCase()}
+              {userProfile?.user?.username ? userProfile.user.username.charAt(0).toUpperCase() : ""}
             </button>
 
             {profileOpen && (

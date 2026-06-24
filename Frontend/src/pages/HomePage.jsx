@@ -55,7 +55,7 @@ export default function HomePage() {
               </div>
               <div>
                 <h2 className="font-black text-[#1A1C4B] text-xl tracking-tight">
-                  {userProfile.user.username}
+                  {userProfile?.user?.username}
                 </h2>
                 <p className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em]">
                   Active Course: <span className="text-indigo-600">AIML</span>
@@ -95,7 +95,7 @@ export default function HomePage() {
               </div>
               <div>
                 <h2 className="font-black text-[#1A1C4B] text-xl tracking-tight">
-                  {userProfile.user.username}
+                  {userProfile?.user?.username}
                 </h2>
                 <p className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em]">
                   Active Course: <span className="text-indigo-600">AIML</span>
