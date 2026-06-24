@@ -12,7 +12,9 @@ import codingRoutes from "./routes/codingRoutes.js";
 import projectRoutes from "./routes/projectRoutes.js";
 
 dotenv.config();
-connectDB();
+connectDB().catch((err) => {
+  console.warn("Initial DB connection failed — server will retry on each request:", err.message);
+});
 
 const app = express();
 

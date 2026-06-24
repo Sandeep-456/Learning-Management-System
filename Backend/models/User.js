@@ -4,12 +4,26 @@ const userSchema = new mongoose.Schema(
   {
     mobile: {
       type: String,
-      unique: true,
+      sparse: true,
+    },
+    email: {
+      type: String,
+      sparse: true,
+    },
+    name: {
+      type: String,
     },
     username: {
       type: String,
     },
-    // future fields (name, email, role, batches etc.)
+    provider: {
+      type: String,
+      enum: ["google", "phone"],
+      default: "phone",
+    },
+    firebaseUid: {
+      type: String,
+    },
   },
   { timestamps: true },
 );

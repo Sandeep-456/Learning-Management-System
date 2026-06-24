@@ -146,7 +146,52 @@ const getCourseSchedule = async (req, res) => {
     const userId = req.userId;
 
     // 1. Fetch Student & Batch
-    const student = await Student.findOne({ user: userId });
+    let student = await Student.findOne({ user: userId });
+    if (!student) {
+      // Auto-enroll user in default Course and Batch if available (very helpful for new signups)
+      const defaultCourse = await Course.findOne({ name: "AI/ML" }) || await Course.findOne();
+      const defaultBatch = await Batch.findOne({ courseId: defaultCourse?._id }) || await Batch.findOne();
+
+      if (defaultCourse && defaultBatch) {
+        console.log(`[Auto-Enroll] Enrolling user ${userId} to course ${defaultCourse.name} & batch ${defaultBatch.name}`);
+        const courseStructure = await Course.findById(defaultCourse._id).populate({
+          path: "stages",
+          populate: {
+            path: "topics",
+            populate: {
+              path: "subtopics",
+            },
+          },
+        });
+
+        if (courseStructure) {
+          const initialCourseProgress = {
+            courseId: defaultCourse._id,
+            progress: 0,
+            stages: courseStructure.stages.map((stage) => ({
+              stageId: stage._id,
+              progress: 0,
+              topics: stage.topics.map((topic) => ({
+                topicId: topic._id,
+                status: "Pending",
+                subtopics: topic.subtopics.map((subtopic) => ({
+                  subtopicId: subtopic._id,
+                  status: "Pending",
+                })),
+              })),
+            })),
+          };
+
+          student = new Student({
+            user: userId,
+            batchId: defaultBatch._id,
+            courses: [initialCourseProgress],
+          });
+          await student.save();
+        }
+      }
+    }
+
     if (!student || !student.batchId) {
       return res
         .status(404)

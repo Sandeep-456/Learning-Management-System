@@ -143,6 +143,61 @@ export const loginMobileUser = async (req, res) => {
   }
 };
 
+// GOOGLE SIGN-IN
+export const googleLogin = async (req, res) => {
+  try {
+    const { idToken } = req.body;
+    if (!idToken) return res.status(400).json({ msg: "No token provided" });
+
+    const decodedToken = await admin.auth().verifyIdToken(idToken);
+    const { email, name, uid, picture } = decodedToken;
+
+    if (!email) {
+      return res.status(400).json({ msg: "Email required for Google Sign-In" });
+    }
+
+    let user = await User.findOne({ email });
+    if (!user) {
+      user = await User.create({
+        email,
+        name: name || email.split("@")[0],
+        username: email.split("@")[0],
+        provider: "google",
+        firebaseUid: uid,
+      });
+    }
+
+    let profile = await Profile.findOne({ user: user._id }).populate(
+      "user",
+      "email name username",
+    );
+    if (!profile) {
+      profile = await Profile.create({ user: user._id });
+      profile = await Profile.findOne({ user: user._id }).populate(
+        "user",
+        "email name username",
+      );
+    }
+
+    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
+      expiresIn: "3d",
+    });
+
+    res.cookie("auth_token", token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
+      maxAge: 3 * 24 * 60 * 60 * 1000,
+      path: "/",
+    });
+
+    res.status(200).json({ success: true, profile });
+  } catch (error) {
+    console.error("Google Sign-In verification failed:", error);
+    res.status(401).json({ msg: "Invalid or expired token" });
+  }
+};
+
 // VERIFY OTP
 export const verifyOtp = async (req, res) => {
   try {
